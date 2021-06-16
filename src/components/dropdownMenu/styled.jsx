@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const DropdownMenuContainer = styled.div`
     position: absolute;

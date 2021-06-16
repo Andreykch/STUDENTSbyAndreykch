@@ -1,8 +1,9 @@
-import React from "react"
-import { AvatarContainer } from "./styled.jsx"
+/* eslint-disable react/prop-types */
+import React from 'react'
+import { AvatarContainer } from './styled.jsx'
 
-function Avatar(props){
-    return <AvatarContainer>
+function Avatar (props) {
+  return <AvatarContainer>
         <svg role="none" aria-label={'avatar of ' + props.studentsName} style={{ height: props.size + 'px', width: props.size + 'px' }}>
             <defs>
                 <mask id="crop">

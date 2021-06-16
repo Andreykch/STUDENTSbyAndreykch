@@ -1,8 +1,8 @@
-import React from "react"
-import { TableHeadContainer } from "./styled.jsx"
+import React from 'react'
+import { TableHeadContainer } from './styled.jsx'
 
-function TableHead() {
-    return <TableHeadContainer>
+function TableHead () {
+  return <TableHeadContainer>
         <p></p>
         <p>ФИО</p>
         <p>Специальность</p>

@@ -1,27 +1,27 @@
-const { makeAutoObservable, observable, action } = require("mobx");
+const { makeAutoObservable } = require('mobx')
 
-class SortMenuModel{
+class SortMenuModel {
     isOpen = false;
     buttonContent = ''
     sortDirection = 0
 
-    constructor(){
-        makeAutoObservable(this)
+    constructor () {
+      makeAutoObservable(this)
     }
 
-    ChangeState(){
-        this.isOpen = !this.isOpen
+    ChangeState () {
+      this.isOpen = !this.isOpen
     }
 
-    UpdateMenuButtonContent(text, action){
-        this.buttonContent = text
-        this.sortDirection = this.UpdateSortDirection(action)
+    UpdateMenuButtonContent (text, action) {
+      this.buttonContent = text
+      this.sortDirection = this.UpdateSortDirection(action)
     }
 
-    UpdateSortDirection(action){
-        return action.indexOf('Right') == -1 ? -1 : 1
+    UpdateSortDirection (action) {
+      return action.indexOf('Right') === -1 ? -1 : 1
     }
 }
 
-const sortMenuStore= new SortMenuModel()
+const sortMenuStore = new SortMenuModel()
 export default sortMenuStore

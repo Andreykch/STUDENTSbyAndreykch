@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const TextHeaderContainer = styled.h1`
     color: var(--black);
