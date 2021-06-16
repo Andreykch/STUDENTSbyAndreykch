@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const TableRowContainer = styled.div`
     font-family: Geometria;
@@ -7,5 +7,5 @@ export const TableRowContainer = styled.div`
     font-size: 15px;
     line-height: 20px;
     background: var(--white);
-    border-radius: 6px;
+    // border-radius: 6px;
 `

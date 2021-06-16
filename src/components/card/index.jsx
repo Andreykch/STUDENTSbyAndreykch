@@ -1,11 +1,12 @@
-import React from "react"
-import studentsStore from "../../mobxStore/studentsStore.js"
-import Button from "../Button/index.jsx"
-import Avatar from "../avatar/index.jsx"
-import { CardContainer } from "./styled.jsx"
+/* eslint-disable react/prop-types */
+import React from 'react'
+import studentsStore from '../../mobxStore/studentsStore.js'
+import Button from '../Button/index.jsx'
+import Avatar from '../avatar/index.jsx'
+import { CardContainer } from './styled.jsx'
 
-function Card(props) {
-    return <CardContainer>
+function Card (props) {
+  return <CardContainer>
         <div className='studentCard__mainInformation'>
             <Avatar size='40' avatarURL={props.avatar} studentsName={props.name}></Avatar>
             <div className='description'>

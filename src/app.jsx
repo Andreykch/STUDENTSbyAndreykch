@@ -1,11 +1,11 @@
-import React from "react"
-import Header from "./components/header/index.jsx"
+import React from 'react'
+import Header from './components/header/index.jsx'
 import { createGlobalStyle } from 'styled-components'
-import Main from "./components/main/index.jsx"
-import GeometriaWoff from "./static/fonts/Geometria.woff"
-import GeometriaTtf from "./static/fonts/Geometria.ttf"
-import GeometriaBoldWoff from "./static/fonts/Geometria-Bold.woff"
-import GeometriaBoldTtf from "./static/fonts/Geometria-Bold.ttf"
+import Main from './components/main/index.jsx'
+import GeometriaWoff from './static/fonts/Geometria.woff'
+import GeometriaTtf from './static/fonts/Geometria.ttf'
+import GeometriaBoldWoff from './static/fonts/Geometria-Bold.woff'
+import GeometriaBoldTtf from './static/fonts/Geometria-Bold.ttf'
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -60,6 +60,6 @@ const App = () => (
         <Header/>
         <Main/>
     </>
-);
+)
 
-export default App;
+export default App

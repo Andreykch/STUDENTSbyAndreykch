@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SearchBarContainer = styled.div`
     position: relative;
@@ -19,7 +19,7 @@ export const SearchBarContainer = styled.div`
         line-height: 20px;
     }
 
-    input::placeholder {
+    input::placeholder{
         opacity: .3;
     }
 

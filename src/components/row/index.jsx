@@ -1,11 +1,12 @@
-import React from "react"
-import studentsStore from "../../mobxStore/studentsStore.js"
-import Button from "../Button/index.jsx"
-import Avatar from "../avatar/index.jsx"
-import { RowContainer } from "./styled.jsx"
+/* eslint-disable react/prop-types */
+import React from 'react'
+import studentsStore from '../../mobxStore/studentsStore.js'
+import Button from '../Button/index.jsx'
+import Avatar from '../avatar/index.jsx'
+import { RowContainer } from './styled.jsx'
 
-function Row(props) {
-    return <RowContainer>
+function Row (props) {
+  return <RowContainer>
         <Avatar size='40' avatarURL={props.avatar} studentsName={props.name}></Avatar>
         <p>{props.name}</p>
         <p>{props.specialty}</p>
